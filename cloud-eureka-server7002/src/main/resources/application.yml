@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 7002
 
 spring:
   application:
@@ -7,12 +7,12 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka7001.com #eureka服务端的实例名称
+    hostname: eureka7002.com #eureka服务端的实例名称
   client:
     register-with-eureka: false #false表示不向服务中心注册自己
     fetch-registry: false #false 表示自己就是注册中心
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/ # 把自己注册到7002中，如果还有7003、7004用逗号隔开
+      defaultZone: http://eureka7001.com:7001/eureka/ #把自己注册到7001，若是有三个集群以上，url之间用逗号隔开
   server:
     enable-self-preservation: false #关闭自我保护
     eviction-interval-timer-in-ms: 2000 #检测心跳的时间间隔
