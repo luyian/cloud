@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8001
 spring:
   application:
     name: cloud-payment-service #提交到注册中心的微服务名称
