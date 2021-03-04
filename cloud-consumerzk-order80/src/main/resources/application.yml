@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumerzk-order
+  cloud:
+    zookeeper:
+      connect-string: yinianliu.cn:2181 #如果zookeeper是集群，这里用逗号隔开就行了
