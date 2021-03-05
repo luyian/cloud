@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1c263c-d689-4c24-b905-26f4d0d88c70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-consumerzk-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/java/com/it/cloud/OrderZkMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/java/com/it/cloud/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/java/com/it/cloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/it/cloud/controller/DiscoveryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/java/com/it/cloud/PaymentMain8004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/java/com/it/cloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/it/HelloZk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/it/cloud/config/MyRibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/OrderFeignMain80.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/config/FeignConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/config/MyRibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/java/com/it/cloud/service/PaymentFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign-order80/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/it/cloud/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/it/cloud/OrderMain80.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderZkMain80">
+  <component name="RunManager" selected="Spring Boot.OrderFeignMain80">
     <configuration name="HelloZk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.it.HelloZk" />
       <module name="zookeeper" />
@@ -169,6 +166,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.it.cloud.EurekaMain7002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderFeignMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-feign-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.it.cloud.OrderFeignMain80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,16 +233,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloZk" />
+        <item itemvalue="Spring Boot.OrderFeignMain80" />
         <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.EurekaMain7002" />
+        <item itemvalue="Application.HelloZk" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.20411478" />
+        <option name="contentProportion" value="0.1781267" />
         <treeState>
           <expand>
             <path>
@@ -269,7 +280,7 @@
       <workItem from="1614651976097" duration="3142000" />
       <workItem from="1614655509663" duration="17645000" />
       <workItem from="1614753110405" duration="10085000" />
-      <workItem from="1614838149390" duration="7814000" />
+      <workItem from="1614838149390" duration="16088000" />
     </task>
     <servers />
   </component>
