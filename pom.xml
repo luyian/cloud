@@ -22,6 +22,7 @@
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
         <module>zookeeper</module>
+        <module>cloud-provider-hystrix-payment8001</module>
     </modules>
 
     <!--统一jar包版本-->
